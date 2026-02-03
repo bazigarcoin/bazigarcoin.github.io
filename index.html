@@ -13,7 +13,10 @@ body {
   color: #ffffff;
   line-height: 1.6;
 }
-
+ body {
+  padding-top: 80px;
+  }
+  
 header {
   text-align: center;
   padding: 60px 20px;
@@ -75,11 +78,63 @@ footer {
   color: #aaa;
   font-size: 14px;
 }
+  .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0b0b12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 999;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.buy-btn {
+  background: #00ff99;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+}
+  
 </style>
 </head>
 
 <body>
+<body>
 
+<!-- Navbar Start -->
+<nav class="navbar">
+  <div class="logo">Bazigar Coin</div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#tokenomics">Tokenomics</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#community">Community</a></li>
+  </ul>
+
+  <a href="https://jup.ag/swap/SOL-BAZI" class="buy-btn">Buy Now</a>
+</nav>
+<!-- Navbar End -->
+
+<header>
+  <img src="logo.png" alt="Bazigar Coin Logo">
+  <h1>Bazigar Coin</h1>
+  
 <header>
   <img src="logo.png" alt="Bazigar Coin Logo">
   <h1>Bazigar Coin</h1>
